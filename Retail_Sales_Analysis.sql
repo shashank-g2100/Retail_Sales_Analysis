@@ -1,3 +1,23 @@
+-- create database called 'retail_db'
+CREATE DATABASE retail_db;
+
+
+-- create table called 'retail_sales'
+CREATE TABLE retail_sales
+(
+    transactions_id INT PRIMARY KEY,
+    sale_date DATE,	
+    sale_time TIME,
+    customer_id INT,	
+    gender VARCHAR(10),
+    age INT,
+    category VARCHAR(35),
+    quantity INT,
+    price_per_unit FLOAT,	
+    cogs FLOAT,
+    total_sale FLOAT
+);
+
 -- create a retail sales
 select * from retail_sales;
 
@@ -167,3 +187,6 @@ select
 from retail_sales
 group by category
 order by total_profit desc;
+
+
+-- END OF PROJECT
